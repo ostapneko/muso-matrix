@@ -4,6 +4,7 @@ import (
 	"log/slog"
 	"os"
 
+	"github.com/ostapneko/muso-matrix/internal/image"
 	"github.com/ostapneko/muso-matrix/internal/muso"
 )
 
@@ -17,4 +18,6 @@ func main() {
 	}
 
 	slog.Info("Track info", "result", result)
+
+	image.Draw(result, 10)
 }
